@@ -9,6 +9,7 @@ module.exports = {
         "theme" : "#392467",
         "theme-alt" : "#5D3587",
         "theme-alth" : "#FFD1E3",
+        "theme-bg" : "#000"
       }
     },
   },
