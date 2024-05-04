@@ -8,12 +8,12 @@ const Home : React.FC = () => {
 
     useEffect(()=>
     {
-      let num = -1;
+      let num = 0;
         setInterval(() =>
         {
+          setTextCount(num);
           num++;
           num %= _mainText.length;
-          setTextCount(num);
           console.log("Value " + mainText + " Count " + textCount);
         }, 400);
 
@@ -27,7 +27,7 @@ const Home : React.FC = () => {
     <div className="flex flex-col justify-evenly items-center min-h-[100vh] bg-theme-bg text-white w-[100%]">
         <h1 className="text-theme text-8xl font-bold h-[10rem]">{mainText}</h1>
         <SearchBar />
-    </div>
+    </div> 
   )
 }
 
